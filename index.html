@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Receipt Scanner</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Receipt Scanner</h1>
+        <input type="file" id="imageInput" accept="image/*">
+        <button id="scanBtn">Scan Receipt</button>
+        <div id="result">
+            <h2>Extracted Text</h2>
+            <pre id="ocrText">Upload a receipt image to get started...</pre>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/tesseract.js@5/dist/tesseract.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html> 
